@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #317c7d;
+}
+
+/* NAV ------------------------------- */
+
+
+.start-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.5vh;
+  background-color: #c0c0c0;
+  border-top: 4px solid #c3cbcf;
+}
+
+.start-button {
+  padding: 0 2rem 0 2rem;
+  margin-left: 2rem;
+  margin-bottom: 0.2rem;
+  background: #eee;
+  border: 2px inset white;
+  border-style: outset;
+}
+
+.start-button:hover {
+  background-color:#B8B8B8;
+}
+
+.start-text {
+  padding: 0 1rem 0 1rem; 
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+#clock {
+  font-size: 1.5rem;
+  padding: 0 2rem 0 2rem;
+  margin-right: 2rem;
+}
+
+/* SECTION BODY ---------------------- */
+
+.left-panel {
+  height: 100%;
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon {
+  height: 10vh;
+}
+
+.contact {
+  max-width: 115px;
+}
+
+
+/* GLOBAL ---------------------------- */
+.third {
+  width: 33.3%;
+}
+
+.stackem {
+  display: flex;
+  flex-direction: column;
+
+}
+.text-sandwich {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* MQ  ------------------------------- */
+@media only screen and (min-width: 600px) {
+  .left-panel {width: 16.66%;}
+}
