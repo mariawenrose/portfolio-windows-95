@@ -1,8 +1,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: sans-serif;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -15,7 +15,9 @@ body {
   background-color: #317c7d;
 }
 
-/* NAV ------------------------------- */
+/*==================================== */
+/* NAV . HMTL                          */
+/*==================================== */
 
 
 .start-bar {
@@ -40,6 +42,7 @@ body {
   border-style: outset;
 }
 
+
 .start-button:hover {
   background-color:#B8B8B8;
 }
@@ -56,9 +59,47 @@ body {
   margin-right: 2rem;
 }
 
-/*------------------------------------ */
+/*==================================== */
+/* NAV . DESIGN                        */
+/*==================================== */
+
+
+.start-bar-button-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.my-computer-text {
+  font-size: 1.2rem;
+}
+
+.folder-nav-text {
+  font-size: 1.2rem;
+}
+
+.my-computer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 0.2rem;
+  background: #eee;
+  border-top: 2.5px solid #1b1b1b;
+  border-left: 2px solid #1b1b1b;
+  border-right: 2px solid #c3cbcf;
+  border-bottom: 2px solid #c3cbcf;
+}
+
+.my-computer-button:hover {
+  background-color:#B8B8B8;
+}
+
+
+
+
+/*==================================== */
 /* INDEX . HMTL                        */
-/*------------------------------------ */
+/*==================================== */
 
 
 .left-panel {
@@ -74,17 +115,19 @@ body {
   height: 10vh;
 }
 
-.icon a:active {
+/* .icon a:active {
   outline: 1px dotted black; 
-}
+} */
 
 .contact {
   max-width: 115px;
 }
 
-/*------------------------------------ */
+
+/*==================================== */
 /* DESIGN . HMTL                       */
-/*------------------------------------ */
+/*==================================== */
+
 
 .design-left-panel {
   width: auto;
@@ -106,7 +149,6 @@ body {
   top: 10rem;
   border: 4px solid #c3cbcf;
   border-style: outset;
-
 }
 
 .root-window-top {
@@ -115,8 +157,8 @@ body {
   background-color: #00017f;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-
 }
 
 .root-window-icons {
@@ -139,7 +181,6 @@ body {
   border-left: 3px solid #c3cbcf;
   border-right: 2px solid #1b1b1b;
   border-bottom: 2px solid #1b1b1b;
-
 }
 
 .exit-icon {
@@ -154,19 +195,20 @@ body {
   border-left: 3px solid #c3cbcf;
   border-right: 2px solid #1b1b1b;
   border-bottom: 2px solid #1b1b1b;
-
 }
 
 .root-window-bottom {
   width: auto;
   height: auto;
   background-color:#c0c0c0;
-
 }
 
 
+/*==================================== */
+/* GLOBAL CSS                          */
+/*==================================== */
 
-/* GLOBAL ---------------------------- */
+
 .third {
   width: 33.3%;
 }
@@ -174,15 +216,31 @@ body {
 .stackem {
   display: flex;
   flex-direction: column;
-
 }
+
 .text-sandwich {
   color: white;
   text-align: center;
   font-size: 1rem;
 }
 
-/* MQ  ------------------------------- */
+@font-face {
+  font-family: 'Microsoft Sans Serif';
+  src: url('/fonts/Microsoft-Sans-Serif.ttf') format ('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*==================================== */
+/* MEDIA QUERIES                       */
+/*==================================== */
+
+
 @media only screen and (min-width: 600px) {
-  .left-panel {width: 16.66%;}
+  .left-panel {width: 16.66%;};
+}
+
+@media only screen and (max-width: 600px) {
+  #root-folder-window {width: 90%;};
 }
