@@ -6,13 +6,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
 }
 
 .container {
   height: 100%;
   width: 100%;
   background-color: #317c7d;
+  position: relative;
 }
 
 /*==================================== */
@@ -42,7 +42,6 @@ body {
   border-style: outset;
 }
 
-
 .start-button:hover {
   background-color:#B8B8B8;
 }
@@ -62,7 +61,6 @@ body {
 /*==================================== */
 /* NAV . DESIGN                        */
 /*==================================== */
-
 
 .start-bar-button-wrapper {
   display: flex;
@@ -95,8 +93,6 @@ body {
 }
 
 
-
-
 /*==================================== */
 /* INDEX . HMTL                        */
 /*==================================== */
@@ -115,9 +111,11 @@ body {
   height: 10vh;
 }
 
-/* .icon a:active {
-  outline: 1px dotted black; 
-} */
+.mini-icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
 
 .contact {
   max-width: 115px;
@@ -125,7 +123,7 @@ body {
 
 
 /*==================================== */
-/* DESIGN . HMTL                       */
+/* WEB . HMTL                       */
 /*==================================== */
 
 
@@ -134,12 +132,10 @@ body {
   height: 100%;
 }
 
-
 .folder-nav-text {
   color: white;
   margin-left: 1rem;
 } 
-
 
 #root-folder-window {
   height: 63%;
@@ -149,10 +145,11 @@ body {
   top: 10rem;
   border: 4px solid #c3cbcf;
   border-style: outset;
+  overflow: scroll;
 }
 
 .root-window-top {
-  width: auto;
+  width: 100%;
   height: 3rem;
   background-color: #00017f;
   display: flex;
@@ -198,10 +195,28 @@ body {
 }
 
 .root-window-bottom {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   background-color:#c0c0c0;
+  position: absolute;
 }
+
+.trash-icon {
+  position: absolute;
+  left: 80%;
+  top: 75%;
+}
+
+ul {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 
 
 /*==================================== */
