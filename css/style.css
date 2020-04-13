@@ -257,5 +257,13 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-  #root-folder-window {width: 90%;};
+  #root-folder-window {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .trash-icon {
+    display: none;
+  }
 }
