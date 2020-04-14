@@ -238,6 +238,12 @@ ul {
   padding: 1rem;
 }
 
+#profile-link {
+  width: 65%;
+  margin: 2rem;
+  padding: 1rem;
+}
+
 
 /*==================================== */
 /* GLOBAL CSS                          */
