@@ -219,9 +219,7 @@ ul {
 }
 
 .project-tile {
-  width: 30%;
-  margin: 2rem;
-  padding: 1rem;
+  padding: 2em;
   border: 2px solid #dce0e2;
   border-style: outset;
 }
@@ -232,6 +230,12 @@ ul {
 
 .project-icon {
   height: 5rem;
+}
+
+.anchor-links {
+  width: 30%;
+  margin: 2rem;
+  padding: 1rem;
 }
 
 
