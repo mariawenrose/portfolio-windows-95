@@ -140,6 +140,7 @@ body {
 #root-folder-window {
   height: 63%;
   width: 60%;
+  max-width: 850px;
   margin-left: 3vw;
   position: relative;
   top: 10rem;
@@ -196,7 +197,6 @@ body {
 
 .root-window-bottom {
   width: 100%;
-  height: 100%;
   background-color:#c0c0c0;
   position: absolute;
 }
@@ -215,8 +215,34 @@ ul {
 .list-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
+.project-tile {
+  padding: 2em;
+  border: 2px solid #dce0e2;
+  border-style: outset;
+}
+
+.project-tile:hover {
+  background-color: rgb(173, 173, 173);
+}
+
+.project-icon {
+  height: 5rem;
+}
+
+.anchor-links {
+  width: 30%;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+#profile-link {
+  width: 65%;
+  margin: 2rem;
+  padding: 1rem;
+}
 
 
 /*==================================== */
@@ -246,6 +272,16 @@ ul {
   font-style: normal;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
+.project-tag {
+  font-size: 1.2rem;
+}
+
+
+
 
 /*==================================== */
 /* MEDIA QUERIES                       */
@@ -257,5 +293,13 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-  #root-folder-window {width: 90%;};
+  #root-folder-window {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .trash-icon {
+    display: none;
+  }
 }
